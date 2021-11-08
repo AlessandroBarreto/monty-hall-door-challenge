@@ -1,4 +1,4 @@
-import styles from "../styles/presente.module.scss";
+import styles from "../styles/Presente.module.scss";
 
 export default function Presente() {
   return (
