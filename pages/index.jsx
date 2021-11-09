@@ -5,7 +5,8 @@ export default function Home() {
   return (
     <div>
       <Presente />
-      <Porta />
+      <Porta isSelecionada={false} />
+      <Porta isSelecionada={true} />
     </div>
   );
 }

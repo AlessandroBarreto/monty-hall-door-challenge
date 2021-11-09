@@ -1,6 +1,7 @@
 @import "mixins";
 
 .area {
+  position: relative;
   width: $area-porta-largura;
   height: $area-porta-altura;
   display: flex;
@@ -27,6 +28,16 @@
       .numero {
         font-size: 3rem;
       }
+
+      .macaneta {
+        position: absolute;
+        top: 140px;
+        align-self: flex-start;
+        height: 20px;
+        width: 20px;
+        border-radius: 10px;
+        background-color: brown;
+      }
     }
   }
 
@@ -34,5 +45,19 @@
     height: 10px;
     width: 100%;
     background-color: #ddd;
+  }
+}
+
+.selecionada {
+  border-left: 5px solid yellow !important;
+  border-top: 5px solid yellow !important;
+  border-right: 5px solid yellow !important;
+
+  .numero {
+    color: yellow !important;
+  }
+
+  .macaneta {
+    background-color: yellow !important;
   }
 }
