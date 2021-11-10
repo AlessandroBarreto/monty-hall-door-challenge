@@ -1,4 +1,4 @@
-@import "mixins";
+@use "mixins" as *;
 
 .area {
   position: relative;
@@ -16,6 +16,7 @@
     border-top: 5px solid brown;
     border-right: 5px solid brown;
     width: 90%;
+    background-color: #0005;
 
     .porta {
       display: flex;
