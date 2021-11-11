@@ -1,9 +1,24 @@
-export default function Home() {
-  
+import Cartao from "../components/Cartao";
+import styles from "../styles/Form.module.scss";
+import Link from "next/link";
 
+export default function Form() {
   return (
-    <div style={{ display: "flex" }}>
-      <h1>formulario de inicio</h1>
+    <div className={styles.form}>
+      <div>
+        <Cartao bgcolor="#c0392c">
+          <h1>Monty Hall</h1>
+        </Cartao>
+        <Cartao></Cartao>
+      </div>
+      <div>
+        <Cartao></Cartao>
+        <Cartao bgcolor="#28a085">
+          <Link href={`/jogo/4/2`}>
+            <h2 className={styles.link}>Iniciar</h2>
+          </Link>
+        </Cartao>
+      </div>
     </div>
   );
 }
