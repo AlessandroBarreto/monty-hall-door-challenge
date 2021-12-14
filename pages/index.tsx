@@ -16,7 +16,7 @@ export default function Form() {
         </Cartao>
         <Cartao>
           <EntradaNumerica
-            text="Qtde Portas?"
+            text="Number of doors"
             value={qtdePortas}
             onChange={(novaQtde) => setQtdePortas(novaQtde)}
           />
@@ -25,7 +25,7 @@ export default function Form() {
       <div>
         <Cartao>
           <EntradaNumerica
-            text="Porta com presente?"
+            text=" Door number with prize"
             value={comPresente}
             onChange={(novaPortaComPresente) =>
               setComPresente(novaPortaComPresente)
