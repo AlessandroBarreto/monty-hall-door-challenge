@@ -22,7 +22,7 @@ export default function Jogo() {
     const portas = +router.query.portas;
     const temPresente = +router.query.temPresente;
     setPortas(criarPortas(portas, temPresente));
-  }, [router?.query]);
+  }, [router?.query.portas, router?.query.temPresente]);
 
   const renderizarPortas = () => {
     return portas.map((porta) => {
@@ -44,7 +44,7 @@ export default function Jogo() {
         {valido ? renderizarPortas() : <h1>Valores inválidos!</h1>}
       </div>
       <div className={styles.botoes}>
-        <Link href="/">
+        <Link href="/" passHref>
           <button>reiniciar jogo</button>
         </Link>
       </div>
